@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className="font-light text-lg px-2 mb-12">
             <h2 className="text-xl font-semibold mb-4">Contact</h2>
-            <div className="flex items-center my-3">
+            {/* <div className="flex items-center my-3">
               <Image
                 src="/icons/at.svg"
                 className="inline w-6 mr-4"
@@ -50,7 +50,7 @@ export default function Home() {
                 height="24"
               />
               <a href="tel:">+34 645 994 691</a>
-            </div>
+            </div> */}
             <div className="flex items-center my-3">
               <Image
                 src="/icons/home.svg"

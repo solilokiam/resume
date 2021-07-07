@@ -18,10 +18,12 @@ export default function Home() {
           className="w-full sm:max-w-sm p-8 bg-gradient-to-b from-gray-400 via-gray-300 to-white"
         >
           <div className="px-2 mb-12">
-            <img
+            <Image
               src="/miquelcompany.jpeg"
               alt="Profile Picture"
               className="rounded-full w-52 mx-auto mb-2"
+              width="537"
+              height="640"
             />
             <h1 className="text-center text-3xl font-semibold mb-2">Miquel Company Rodriguez</h1>
             <h2 className="text-center text-xl font-light">Fullstack Developer</h2>
@@ -30,26 +32,32 @@ export default function Home() {
           <div className="font-light text-lg px-2 mb-12">
             <h2 className="text-xl font-semibold mb-4">Contact</h2>
             <div className="flex items-center my-3">
-              <img
+              <Image
                 src="/icons/at.svg"
                 className="inline w-6 mr-4"
                 alt="Mail icon"
+                width="24"
+                height="24"
               />
               <a href="mailto:">miquel@solilokiam.com</a>
             </div>
             <div className="flex items-center my-3">
-              <img
+              <Image
                 src="/icons/phone.svg"
                 className="inline w-6 mr-4"
                 alt="Phone icon"
+                width="24"
+                height="24"
               />
               <a href="tel:">+34 645 994 691</a>
             </div>
             <div className="flex items-center my-3">
-              <img
+              <Image
                 src="/icons/home.svg"
                 className="inline w-6 pb-1 mr-4"
                 alt="House icon"
+                width="24"
+                height="24"
               />
               <div>
                 <p>Barcelona</p>
@@ -60,18 +68,22 @@ export default function Home() {
           <div className="font-light text-lg px-2 mb-12">
             <h2 className="text-xl font-semibold mb-4">Personal</h2>
             <div className="flex items-center my-3">
-              <img
+              <Image
                 src="/icons/cake.svg"
                 className="inline w-6 mr-4"
                 alt="Cake Icon"
+                width="24"
+                height="24"
               />
               <span>Feb 1982</span>
             </div>
             <div className="flex items-center my-3">
-              <img
+              <Image
                 src="/icons/parent.svg"
                 className="inline w-6 mr-4"
                 alt="Parent Icon"
+                width="24"
+                height="24"
               />
               <span>One wife, two kids and one dog</span>
             </div>
@@ -80,18 +92,22 @@ export default function Home() {
           <div className="font-light text-lg px-2 mb-12">
             <h2 className="text-xl font-semibold mb-4">On the Web</h2>
             <div className="flex items-center my-3">
-              <img
+              <Image
                 src="/icons/gh.svg"
                 className="inline w-6 mr-4"
                 alt="GitHub Logo"
+                width="24"
+                height="24"
               />
               <a href="https://www.github.com/solilokiam" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
             <div className="flex items-center my-3">
-              <img
+              <Image
                 src="/icons/linkedin.svg"
                 className="inline w-6 mr-4"
                 alt="LinkedIn Logo"
+                width="24"
+                height="24"
               />
               <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>

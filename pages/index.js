@@ -354,8 +354,8 @@ sent bulk SMS and E-mail campaigns.
                 </div>
                 <div className="lg:inline-block lg:w-8/12 w-full">
                   Small and fun project that I created for the
-                  <a href="https://www.gatsbyjs.com/blog/2020-silly-site-top-20/" target="_blank" rel="noopener noreferer">
-                    2020 Gatsby.js's Silly Site Challenge
+                  <a href="https://www.gatsbyjs.com/blog/2020-silly-site-top-20/" target="_blank" rel="noopener noreferrer">
+                    2020 Gatsby.js&apos;s Silly Site Challenge
                   </a>. It was selected by the judges as an honorable mention.
 
                 </div>

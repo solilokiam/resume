@@ -12,12 +12,12 @@ export default function Home() {
 
       <div className="container mx-auto max-w-screen-xl">
       <main
-        className="flex flex-col-reverse sm:flex-row sm:m-12 shadow-2xl"
+        className="flex flex-col-reverse lg:flex-row lg:m-12 shadow-2xl"
       >
         <div
-          className="w-full sm:max-w-sm p-8 bg-gradient-to-b from-gray-400 via-gray-300 to-white"
+          className="w-full lg:max-w-sm p-8 bg-gradient-to-b from-gray-400 via-gray-300 to-white"
         >
-          <div className="px-2 mb-12">
+          <div className="px-2 mb-12 hidden lg:block">
             <Image
               src="/miquelcompany.jpeg"
               alt="Profile Picture"
@@ -28,43 +28,6 @@ export default function Home() {
             <h1 className="text-center text-3xl font-semibold mb-2">Miquel Company Rodriguez</h1>
             <h2 className="text-center text-xl font-light">Fullstack Developer</h2>
           </div>
-
-          <div className="font-light text-lg px-2 mb-12">
-            <h2 className="text-xl font-semibold mb-4">Contact</h2>
-            {/* <div className="flex items-center my-3">
-              <Image
-                src="/icons/at.svg"
-                className="inline w-6 mr-4"
-                alt="Mail icon"
-                width="24"
-                height="24"
-              />
-              <a href="mailto:">miquel@solilokiam.com</a>
-            </div>
-            <div className="flex items-center my-3">
-              <Image
-                src="/icons/phone.svg"
-                className="inline w-6 mr-4"
-                alt="Phone icon"
-                width="24"
-                height="24"
-              />
-              <a href="tel:">+34 645 994 691</a>
-            </div> */}
-            <div className="flex items-center my-3">
-              <Image
-                src="/icons/home.svg"
-                className="inline w-6 pb-1 mr-4"
-                alt="House icon"
-                width="24"
-                height="24"
-              />
-              <div>
-                <p>Barcelona</p>
-              </div>
-            </div>
-          </div>
-
           <div className="font-light text-lg px-2 mb-12">
             <h2 className="text-xl font-semibold mb-4">Personal</h2>
             <div className="flex items-center my-3">
@@ -86,6 +49,18 @@ export default function Home() {
                 height="24"
               />
               <span>One wife, two kids and one dog</span>
+            </div>
+            <div className="flex items-center my-3">
+              <Image
+                src="/icons/home.svg"
+                className="inline w-6 pb-1 mr-4"
+                alt="House icon"
+                width="24"
+                height="24"
+              />
+              <div>
+                <p>Barcelona</p>
+              </div>
             </div>
           </div>
 
@@ -121,6 +96,14 @@ export default function Home() {
             <p>Native</p>
             <h3 className="font-semibold">English</h3>
             <p>Fluent</p>
+          </div>
+
+          <div className="font-light text-lg px-2 mb-12">
+            <h2 className="text-xl font-semibold mb-4">Education</h2>
+            <h3 className="font-semibold">BSc Computer Science</h3>
+            <p>2000 - 2008 Universitat Politécnica de Catalunya</p>
+            <h3 className="font-semibold">Erasmus Grant</h3>
+            <p>2005 Teknillinen korkeakoulu</p>
           </div>
 
           <div className="font-light text-lg px-2 mb-12">
@@ -174,21 +157,15 @@ export default function Home() {
               </li>
             </ul>
           </div>
-
-          <div className="font-light text-lg px-2 mb-12">
-            <h2 className="text-xl font-semibold mb-4">Education</h2>
-            <h3 className="font-semibold">BSc Computer Science</h3>
-            <p>2000 - 2008 Universitat Politécnica de Catalunya</p>
-            <h3 className="font-semibold">Erasmus Grant</h3>
-            <p>2005 Teknillinen korkeakoulu</p>
-          </div>
         </div>
         <div className="content w-full p-12">
           <div className="prose">
             <h2 className="section-headline">Profile</h2>
             <p>
-            I love creating things, mainly virtual ones. I started lots of years ago developing websites and still loving it. I  have  done  nearly  everything  in  web
-            development,  from  front  end  developer to  system  administrating.  My  greatest passion  is  learn  new  things  and  apply them to my job.
+            I love creating things, mainly virtual ones. I started lots of years ago developing websites
+            and still loving it. I  have  done  nearly  everything  in  web development,  from  frontend
+            to  sysadmin.  My  greatest passion  is  learn  new  things
+            and  apply them to my job.
             </p>
             <p>
             I always say that a good job is a job well done and I apply this to everything I do
@@ -223,7 +200,7 @@ export default function Home() {
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
                   Tools:
                 </div>
-                <div className="lg:inline-block lg:w-8/12 w-full">
+                <div className="flex flex-wrap gap-2 w-full">
                   <span className="rounded-xl bg-gray-300 px-3">React</span>
                   <span className="rounded-xl bg-gray-300 px-3">Redux</span>
                   <span className="rounded-xl bg-gray-300 px-3">Next.js</span>
@@ -259,7 +236,7 @@ export default function Home() {
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
                   Tools:
                 </div>
-                <div className="lg:inline-block lg:w-8/12 w-full">
+                <div className="flex flex-wrap gap-2 w-full">
                   <span className="rounded-xl bg-gray-300 px-3">Symfony</span>
                   <span className="rounded-xl bg-gray-300 px-3">Vagrant</span>
                   <span className="rounded-xl bg-gray-300 px-3">Bootstrap</span>
@@ -291,7 +268,7 @@ export default function Home() {
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
                   Tools:
                 </div>
-                <div className="lg:inline-block lg:w-8/12 w-full">
+                <div className="flex flex-wrap gap-2 w-full">
                   <span className="rounded-xl bg-gray-300 px-3">Symfony</span>
                   <span className="rounded-xl bg-gray-300 px-3">RabbitMQ</span>
                   <span className="rounded-xl bg-gray-300 px-3">Capistrano</span>
@@ -322,7 +299,7 @@ sent bulk SMS and E-mail campaigns.
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
                   Tools:
                 </div>
-                <div className="lg:inline-block lg:w-8/12 w-full">
+                <div className="flex flex-wrap gap-2 w-full">
                   <span className="rounded-xl bg-gray-300 px-3">Symfony</span>
                   <span className="rounded-xl bg-gray-300 px-3">Magento</span>
                   <span className="rounded-xl bg-gray-300 px-3">Worpress</span>
@@ -365,7 +342,7 @@ sent bulk SMS and E-mail campaigns.
           <hr className="mt-8 mb-12" />
           <div className="prose">
             <h2 className="section-headline">Talks</h2>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <h3>
                   DeSymfony 2015
@@ -390,6 +367,21 @@ sent bulk SMS and E-mail campaigns.
                 </h3>
                 <p>React and 7.4M Users</p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full lg:max-w-sm p-2 bg-gray-400 lg:hidden">
+        <div className="flex flex-col md:flex-row items-center p-4 bg-gray-400">
+            <Image
+              src="/miquelcompany.jpeg"
+              alt="Profile Picture"
+              className="rounded-full w-52 mx-auto mb-2"
+              width="293"
+              height="350"
+            />
+            <div className="px-4">
+              <h1 className="text-center text-3xl font-semibold mb-2">Miquel Company Rodriguez</h1>
+              <h2 className="text-center text-xl font-light">Fullstack Developer</h2>
             </div>
           </div>
         </div>

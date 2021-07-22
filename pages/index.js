@@ -84,7 +84,7 @@ export default function Home() {
                 width="24"
                 height="24"
               />
-              <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://es.linkedin.com/in/miquel-company-rodriguez-53a40134" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
 

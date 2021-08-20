@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter();
+  const eagerMode = router.query.eagerMode === '1';
+
   return (
     <div>
       <Head>
@@ -24,6 +28,7 @@ export default function Home() {
               className="rounded-full w-52 mx-auto mb-2"
               width="537"
               height="640"
+              loading={eagerMode ? 'eager' : 'lazy'}
             />
             <h1 className="text-center text-3xl font-semibold mb-2">Miquel Company Rodriguez</h1>
             <h2 className="text-center text-xl font-light">Fullstack Developer</h2>
@@ -37,6 +42,7 @@ export default function Home() {
                 alt="Cake Icon"
                 width="24"
                 height="24"
+                loading={eagerMode ? 'eager' : 'lazy'}
               />
               <span>Feb 1982</span>
             </div>
@@ -47,6 +53,7 @@ export default function Home() {
                 alt="Parent Icon"
                 width="24"
                 height="24"
+                loading={eagerMode ? 'eager' : 'lazy'}
               />
               <span>One wife, two kids and one dog</span>
             </div>
@@ -57,6 +64,7 @@ export default function Home() {
                 alt="House icon"
                 width="24"
                 height="24"
+                loading={eagerMode ? 'eager' : 'lazy'}
               />
               <div>
                 <p>Barcelona</p>
@@ -73,6 +81,7 @@ export default function Home() {
                 alt="GitHub Logo"
                 width="24"
                 height="24"
+                loading={eagerMode ? 'eager' : 'lazy'}
               />
               <a href="https://www.github.com/solilokiam" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
@@ -83,6 +92,7 @@ export default function Home() {
                 alt="LinkedIn Logo"
                 width="24"
                 height="24"
+                loading={eagerMode ? 'eager' : 'lazy'}
               />
               <a href="https://es.linkedin.com/in/miquel-company-rodriguez-53a40134" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
@@ -378,6 +388,7 @@ sent bulk SMS and E-mail campaigns.
               className="rounded-full w-52 mx-auto mb-2"
               width="293"
               height="350"
+              loading={eagerMode ? 'eager' : 'lazy'}
             />
             <div className="px-4">
               <h1 className="text-center text-3xl font-semibold mb-2">Miquel Company Rodriguez</h1>

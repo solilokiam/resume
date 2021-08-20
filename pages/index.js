@@ -186,8 +186,8 @@ export default function Home() {
           <hr className="mt-8 mb-12" />
           <div className="prose">
             <h2 className="section-headline">Experience</h2>
-            <div>
-              <h3>Kodify</h3>
+            <div className="mt-6 mb-8">
+              <h3 className="font-semibold">Kodify</h3>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Oct.&nbsp;2015 - Current
@@ -223,8 +223,8 @@ export default function Home() {
                 </div>
               </section>
             </div>
-            <div>
-              <h3>Chicplace</h3>
+            <div className="mb-8">
+              <h3 className="font-semibold">Chicplace</h3>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Apr.&nbsp;2014 - Oct.&nbsp;2015
@@ -255,8 +255,8 @@ export default function Home() {
                 </div>
               </section>
             </div>
-            <div>
-              <h3>Ofertix</h3>
+            <div className="mb-8">
+              <h3 className="font-semibold">Ofertix</h3>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Jun.&nbsp;2010 - Apr. 2014
@@ -288,7 +288,7 @@ export default function Home() {
               </section>
             </div>
             <div>
-              <h3>Freelance Web Developer</h3>
+              <h3 className="font-semibold">Freelance Web Developer</h3>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Mar.&nbsp;2009 - Jun.&nbsp;2010
@@ -324,7 +324,7 @@ sent bulk SMS and E-mail campaigns.
           <div className="prose">
             <h2 className="section-headline">Side Projects</h2>
             <div className="mb-16">
-              <h3>Todoestamal.com</h3>
+              <a href="https://todoestamal.com" target="_blank" rel="noopener noreferrer"><h3 className="font-semibold">Todoestamal.com</h3></a>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Description:
@@ -336,7 +336,7 @@ sent bulk SMS and E-mail campaigns.
               </section>
             </div>
             <div className="mb-16">
-              <h3>Scrollympics.fun</h3>
+              <a href="https://scrollympics.fun" target="_blank" rel="noopener noreferrer"><h3 className="font-semibold">Scrollympics.fun</h3></a>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Description:

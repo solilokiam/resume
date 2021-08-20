@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 	const page = await browser.newPage();
 
 	// Go to our invoice page that we serve on `localhost:8000`.
-	await page.goto('http://localhost:3000');
+	await page.goto('https://resume.solilokiam.com');
 	// Store the PDF in a file named `invoice.pdf`.
 	const buffer = await page.pdf({ printBackground: true, format: 'A4', scale: 0.5 });
 

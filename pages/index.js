@@ -1,5 +1,7 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
 
       <div className="container mx-auto max-w-screen-xl">
       <main
-        className="flex flex-col-reverse lg:flex-row lg:m-12 lg:shadow-2xl"
+        className="flex flex-col-reverse lg:flex-row lg:m-12 lg:shadow-2xl print:shadow-none"
       >
         <div
           className="w-full lg:max-w-sm p-8 bg-gradient-to-b from-gray-400 via-gray-300 to-white"
@@ -399,9 +401,10 @@ sent bulk SMS and E-mail campaigns.
       </main>
     </div>
     <footer
-      className="mt-12 text-center flex justify-center flex-col md:flex-row mx-12"
+      className="mt-12 mb-12 text-center flex justify-center flex-col mx-12 p4 print:hidden"
     >
-
+      <a href="/api/pdf" target="_blank" rel="noopener noreferrer">Download PDF version</a>
+      <a href="https://github.com/solilokiam/resume" target="_blank" rel="noopener noreferrer">View source</a>
     </footer>
     </div>
   )

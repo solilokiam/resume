@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   });
 
 	const page = await browser.newPage();
-	await page.goto(process.env.AWS_EXECUTION_ENV ? 'https://resume.solilokiam.com?eagerMode=1': 'http://localhost:3000?eagerMode=1©');
+	await page.goto(process.env.AWS_EXECUTION_ENV ? 'https://resume.solilokiam.com?eagerMode=1': 'http://localhost:3000?eagerMode=1');
 	const buffer = await page.pdf({ printBackground: true, width: '1400px', height: '2200px' });
 	await browser.close();
 

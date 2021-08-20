@@ -12,7 +12,7 @@ export default function Home() {
 
       <div className="container mx-auto max-w-screen-xl">
       <main
-        className="flex flex-col-reverse lg:flex-row lg:m-12 shadow-2xl"
+        className="flex flex-col-reverse lg:flex-row lg:m-12 lg:shadow-2xl"
       >
         <div
           className="w-full lg:max-w-sm p-8 bg-gradient-to-b from-gray-400 via-gray-300 to-white"

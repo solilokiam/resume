@@ -202,7 +202,7 @@ export default function Home() {
                   Description:
                 </div>
                 <div className="lg:inline-block lg:w-8/12 w-full">
-                Leading the creation of new features focused on improving query and endpoint performance via materialization. 
+                Creating new features focused on improving query and endpoint performance via materialization. 
                 Improving online query editor by adding hints and improving error highlighting.
                 </div>
               </section>

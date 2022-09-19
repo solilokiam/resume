@@ -165,6 +165,7 @@ export default function Home() {
                   <span className="rounded-xl bg-gray-300 px-3">DynamoDB</span>
                   <span className="rounded-xl bg-gray-300 px-3">MongoDB</span>
                   <span className="rounded-xl bg-gray-300 px-3">MySQL</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Clickhouse</span>
                 </div>
               </li>
             </ul>
@@ -185,12 +186,46 @@ export default function Home() {
           </div>
           <hr className="mt-8 mb-12" />
           <div className="prose">
-            <h2 className="section-headline">Experience</h2>
+            <h2 className="section-headline">Experience</h2>      
+            <div className="mt-6 mb-8">
+              <h3 className="font-semibold">Tinybird</h3>
+              <section className="mb-6">
+                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Feb.&nbsp;2022 - Sep. 2022
+                </div>
+                <div className="lg:inline-block lg:w-8/12 w-full">
+                  Frontend Developer
+                </div>
+              </section>
+              <section className="mb-6">
+                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Description:
+                </div>
+                <div className="lg:inline-block lg:w-8/12 w-full">
+                Leading the creation of new features focused on improving query and endpoint performance via materialization. 
+                Improving online query editor by adding hints and improving error highlighting.
+                </div>
+              </section>
+              <section className="mb-6">
+                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
+                  Tools:
+                </div>
+                <div className="flex flex-wrap gap-2 w-full">
+                  <span className="rounded-xl bg-gray-300 px-3">React</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Redux</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Next.js</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Graphql</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Kinesis</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Redshift</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Kubernetes</span>
+                </div>
+              </section>
+            </div>
             <div className="mt-6 mb-8">
               <h3 className="font-semibold">Kodify</h3>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Oct.&nbsp;2015 - Current
+                  Oct.&nbsp;2015 - Feb. 2022
                 </div>
                 <div className="lg:inline-block lg:w-8/12 w-full">
                   Fullstack Developer

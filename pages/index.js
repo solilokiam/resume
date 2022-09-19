@@ -213,11 +213,9 @@ export default function Home() {
                 <div className="flex flex-wrap gap-2 w-full">
                   <span className="rounded-xl bg-gray-300 px-3">React</span>
                   <span className="rounded-xl bg-gray-300 px-3">Redux</span>
-                  <span className="rounded-xl bg-gray-300 px-3">Next.js</span>
+                  <span className="rounded-xl bg-gray-300 px-3">ClicHouse</span>
                   <span className="rounded-xl bg-gray-300 px-3">Graphql</span>
-                  <span className="rounded-xl bg-gray-300 px-3">Kinesis</span>
-                  <span className="rounded-xl bg-gray-300 px-3">Redshift</span>
-                  <span className="rounded-xl bg-gray-300 px-3">Kubernetes</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Ansible</span>
                 </div>
               </section>
             </div>

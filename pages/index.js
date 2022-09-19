@@ -165,6 +165,7 @@ export default function Home() {
                   <span className="rounded-xl bg-gray-300 px-3">DynamoDB</span>
                   <span className="rounded-xl bg-gray-300 px-3">MongoDB</span>
                   <span className="rounded-xl bg-gray-300 px-3">MySQL</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Clickhouse</span>
                 </div>
               </li>
             </ul>
@@ -185,12 +186,44 @@ export default function Home() {
           </div>
           <hr className="mt-8 mb-12" />
           <div className="prose">
-            <h2 className="section-headline">Experience</h2>
+            <h2 className="section-headline">Experience</h2>      
+            <div className="mt-6 mb-8">
+              <h3 className="font-semibold">Tinybird</h3>
+              <section className="mb-6">
+                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Feb.&nbsp;2022 - Sep. 2022
+                </div>
+                <div className="lg:inline-block lg:w-8/12 w-full">
+                  Frontend Developer
+                </div>
+              </section>
+              <section className="mb-6">
+                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Description:
+                </div>
+                <div className="lg:inline-block lg:w-8/12 w-full">
+                Creating new features focused on improving query and endpoint performance via materialization. 
+                Improving online query editor by adding hints and improving error highlighting.
+                </div>
+              </section>
+              <section className="mb-6">
+                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
+                  Tools:
+                </div>
+                <div className="flex flex-wrap gap-2 w-full">
+                  <span className="rounded-xl bg-gray-300 px-3">React</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Redux</span>
+                  <span className="rounded-xl bg-gray-300 px-3">ClickHouse</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Graphql</span>
+                  <span className="rounded-xl bg-gray-300 px-3">Ansible</span>
+                </div>
+              </section>
+            </div>
             <div className="mt-6 mb-8">
               <h3 className="font-semibold">Kodify</h3>
               <section className="mb-6">
                 <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Oct.&nbsp;2015 - Current
+                  Oct.&nbsp;2015 - Feb. 2022
                 </div>
                 <div className="lg:inline-block lg:w-8/12 w-full">
                   Fullstack Developer
@@ -287,38 +320,6 @@ export default function Home() {
                 </div>
               </section>
             </div>
-            <div>
-              <h3 className="font-semibold">Freelance Web Developer</h3>
-              <section className="mb-6">
-                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Mar.&nbsp;2009 - Jun.&nbsp;2010
-                </div>
-                <div className="lg:inline-block lg:w-8/12 w-full">
-                  Freelance Web Developer
-                </div>
-              </section>
-              <section className="mb-6">
-                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Description:
-                </div>
-                <div className="lg:inline-block lg:w-8/12 w-full">
-                Worked in several projects using Symfony 1.4, Magento, Diem
-Cms. Also created an online marketing tool for MpSystems that
-sent bulk SMS and E-mail campaigns.
-                </div>
-              </section>
-              <section className="mb-6">
-                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
-                  Tools:
-                </div>
-                <div className="flex flex-wrap gap-2 w-full">
-                  <span className="rounded-xl bg-gray-300 px-3">Symfony</span>
-                  <span className="rounded-xl bg-gray-300 px-3">Magento</span>
-                  <span className="rounded-xl bg-gray-300 px-3">Worpress</span>
-                  <span className="rounded-xl bg-gray-300 px-3">Diem</span>
-                </div>
-              </section>
-            </div>
           </div>
           <hr className="mt-8 mb-12" />
           <div className="prose">
@@ -332,21 +333,6 @@ sent bulk SMS and E-mail campaigns.
                 <div className="lg:inline-block lg:w-8/12 w-full">
                   Podcast I hosted with some friends talking about personal implications
                   of working in the tech industry.
-                </div>
-              </section>
-            </div>
-            <div className="mb-16">
-              <a href="https://scrollympics.fun" target="_blank" rel="noopener noreferrer"><h3 className="font-semibold">Scrollympics.fun</h3></a>
-              <section className="mb-6">
-                <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Description:
-                </div>
-                <div className="lg:inline-block lg:w-8/12 w-full">
-                  Small and fun project that I created for the
-                  <a href="https://www.gatsbyjs.com/blog/2020-silly-site-top-20/" target="_blank" rel="noopener noreferrer">
-                    2020 Gatsby.js&apos;s Silly Site Challenge
-                  </a>. It was selected by the judges as an honorable mention.
-
                 </div>
               </section>
             </div>

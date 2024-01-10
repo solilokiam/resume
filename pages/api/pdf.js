@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   const page = await browser.newPage();
   await page.goto(
     process.env.AWS_EXECUTION_ENV
-      ? "https://resume.solilokiam.com?eagerMode=1"
+      ? "https://resume-git-pili-solilokiam.vercel.app?eagerMode=1"
       : "http://localhost:3000?eagerMode=1"
   );
   const buffer = await page.pdf({

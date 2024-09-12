@@ -479,9 +479,9 @@ export default function Home() {
         </main>
       </div>
       <footer className="mt-12 mb-12 text-center flex justify-center flex-col mx-12 p4 print:hidden">
-        <a href="/api/pdf" target="_blank" rel="noopener noreferrer">
+        {/* <a href="/api/pdf" target="_blank" rel="noopener noreferrer">
           Download PDF version
-        </a>
+        </a> */}
         <a
           href="https://github.com/solilokiam/resume"
           target="_blank"

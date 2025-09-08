@@ -255,10 +255,11 @@ export default function Home() {
                     Description:
                   </div>
                   <div className="lg:inline-block lg:w-8/12 w-full">
-                    Organizing a challenging motorcycle event in the Pyrenees
-                    mountains. Managing everything from the website and progress
-                    tracking app to logistics and participant communication.
-                    Ensuring a smooth and enjoyable experience for all riders.
+                    Planned and managed a large-scale motorcycle event in the
+                    Pyrenees, coordinating website development,
+                    progress-tracking tools, logistics, and participant
+                    communication to ensure an efficient, well-organized, and
+                    successful experience.
                   </div>
                 </section>
                 <section className="mb-6">

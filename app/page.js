@@ -1,24 +1,17 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
+
+export const metadata = {
+  title: "Miquel Company | CV",
+  description:
+    "Engineering Manager with expertise in web development, cloud, and high-performing team leadership.",
+};
 
 export default function Home() {
-  const router = useRouter();
-  const eagerMode = router.query.eagerMode === "1";
-
   return (
     <div>
-      <Head>
-        <title>Miquel Company | CV</title>
-        <meta name="description" content="Best All Around Dev you can find" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className="container mx-auto max-w-screen-xl">
         <main className="flex flex-col-reverse lg:flex-row lg:m-12 lg:shadow-2xl print:shadow-none">
-          <div className="w-full lg:max-w-sm p-8 bg-gradient-to-b from-gray-400 via-gray-300 to-white">
+          <div className="w-full lg:max-w-sm p-8 bg-gradient-to-b from-gray-400 dark:from-gray-700 via-gray-300 dark:via-gray-400 to-white dark:to-background">
             <div className="px-2 mb-12 hidden lg:block">
               <Image
                 src="/miquelcompany.jpeg"
@@ -26,7 +19,6 @@ export default function Home() {
                 className="rounded-full w-52 mx-auto mb-2"
                 width="537"
                 height="640"
-                loading={eagerMode ? "eager" : "lazy"}
               />
               <h1 className="text-center text-3xl font-semibold mb-2">
                 Miquel Company Rodriguez
@@ -44,7 +36,6 @@ export default function Home() {
                   alt="Cake Icon"
                   width="24"
                   height="24"
-                  loading={eagerMode ? "eager" : "lazy"}
                 />
                 <span>Feb 1982</span>
               </div>
@@ -55,7 +46,6 @@ export default function Home() {
                   alt="Parent Icon"
                   width="24"
                   height="24"
-                  loading={eagerMode ? "eager" : "lazy"}
                 />
                 <span>One wife, two kids and one dog</span>
               </div>
@@ -66,7 +56,6 @@ export default function Home() {
                   alt="House icon"
                   width="24"
                   height="24"
-                  loading={eagerMode ? "eager" : "lazy"}
                 />
                 <div>
                   <p>Barcelona</p>
@@ -83,7 +72,6 @@ export default function Home() {
                   alt="GitHub Logo"
                   width="24"
                   height="24"
-                  loading={eagerMode ? "eager" : "lazy"}
                 />
                 <a
                   href="https://www.github.com/solilokiam"
@@ -100,7 +88,6 @@ export default function Home() {
                   alt="LinkedIn Logo"
                   width="24"
                   height="24"
-                  loading={eagerMode ? "eager" : "lazy"}
                 />
                 <a
                   href="https://es.linkedin.com/in/miquel-company-rodriguez-53a40134"
@@ -136,15 +123,25 @@ export default function Home() {
                 <li>
                   <div>Frontend</div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="rounded-xl bg-gray-300 px-3">React</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Next.js</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Redux</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Apollo</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      React
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Next.js
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Redux
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Apollo
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Styled Components
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">Scss</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Scss
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Tailwindcss
                     </span>
                   </div>
@@ -152,43 +149,71 @@ export default function Home() {
                 <li>
                   <div>Backend</div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="rounded-xl bg-gray-300 px-3">Node</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Node
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Typescript
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">Symfony</span>
-                    <span className="rounded-xl bg-gray-300 px-3">PHP</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Python</span>
-                    <span className="rounded-xl bg-gray-300 px-3">FastApi</span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Symfony
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      PHP
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Python
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      FastApi
+                    </span>
                   </div>
                 </li>
                 <li>
                   <div>Testing</div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="rounded-xl bg-gray-300 px-3">Jest</span>
-                    <span className="rounded-xl bg-gray-300 px-3">PHPUnit</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Mockery</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Jest
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      PHPUnit
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Mockery
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Playwright
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">Pytest</span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Pytest
+                    </span>
                   </div>
                 </li>
                 <li>
                   <div>Infrastructure</div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="rounded-xl bg-gray-300 px-3">AWS</span>
-                    <span className="rounded-xl bg-gray-300 px-3">GCP</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Vercel</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      AWS
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      GCP
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Vercel
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Kubernetes
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Terraform
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">MongoDB</span>
-                    <span className="rounded-xl bg-gray-300 px-3">MySQL</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      MongoDB
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      MySQL
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Clickhouse
                     </span>
                   </div>
@@ -200,20 +225,60 @@ export default function Home() {
             <div className="prose">
               <h2 className="section-headline">Profile</h2>
               <p>
-                I love creating things, mainly virtual ones. I started lots of
-                years ago developing websites and still loving it. I have done
-                nearly everything in web development, from frontend to sysadmin.
-                My greatest passion is learn new things and apply them to my
-                job.
+                I love building things—especially in the digital world. My
+                journey began years ago with web development, and I still enjoy
+                it just as much today. Over the years, I’ve worked across the
+                full stack, from frontend development to system administration.
+                What drives me most is learning new technologies and applying
+                them to create better solutions.
               </p>
               <p>
-                I always say that a good job is a job well done and I apply this
-                to everything I do
+                I believe that a good job is one done with care and excellence,
+                and I bring that mindset to everything I do.
               </p>
             </div>
             <hr className="mt-8 mb-12" />
             <div className="prose">
               <h2 className="section-headline">Experience</h2>
+              <div className="mt-6 mb-8">
+                <h3 className="font-semibold">PyreneesChallenge</h3>
+                <section className="mb-6">
+                  <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                    May 2025 - Now
+                  </div>
+                  <div className="lg:inline-block lg:w-8/12 w-full">
+                    Jack of all trades
+                  </div>
+                </section>
+                <section className="mb-6">
+                  <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                    Description:
+                  </div>
+                  <div className="lg:inline-block lg:w-8/12 w-full">
+                    Planned and managed a large-scale motorcycle event in the
+                    Pyrenees, coordinating website development,
+                    progress-tracking tools, logistics, and participant
+                    communication to ensure an efficient, well-organized, and
+                    successful experience.
+                  </div>
+                </section>
+                <section className="mb-6">
+                  <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2 flex flex-wrap">
+                    Tools:
+                  </div>
+                  <div className="flex flex-wrap gap-2 w-full">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      React Native
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Jazz-Tools
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Nextjs
+                    </span>
+                  </div>
+                </section>
+              </div>
               <div className="mt-6 mb-8">
                 <h3 className="font-semibold">Landbot</h3>
                 <section className="mb-6">
@@ -229,13 +294,15 @@ export default function Home() {
                     Description:
                   </div>
                   <div className="lg:inline-block lg:w-8/12 w-full">
-                    Leading 2 teams at the same time (Platform and Product).
-                    Pushing both teams forward improving collaboration culture
-                    by creating training and self-improvement sessions and
-                    improving documentation and decision taking processes.
-                    Create new CI/CD pipelines and moving the teams from deploy
-                    once per day to continous deployment, also setting
-                    observability culture company wide.
+                    Leading two teams simultaneously (Platform and Product),
+                    driving collaboration and alignment by fostering a culture
+                    of knowledge sharing, training, and continuous improvement.
+                    Enhanced documentation standards and streamlined
+                    decision-making processes. Designed and implemented new
+                    CI/CD pipelines, transitioning from once-per-day deployments
+                    to continuous deployment. Established and scaled a
+                    company-wide observability culture, ensuring higher
+                    reliability and faster feedback loops.
                   </div>
                 </section>
                 <section className="mb-6">
@@ -243,16 +310,22 @@ export default function Home() {
                     Tools:
                   </div>
                   <div className="flex flex-wrap gap-2 w-full">
-                    <span className="rounded-xl bg-gray-300 px-3">React</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Python</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      React
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Python
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Fast Api
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">GCP</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      GCP
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Terraform
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Kubernetes
                     </span>
                   </div>
@@ -273,10 +346,11 @@ export default function Home() {
                     Description:
                   </div>
                   <div className="lg:inline-block lg:w-8/12 w-full">
-                    Creating new features focused on improving query and
-                    endpoint performance via materialization. Improving online
-                    query editor by adding hints and improving error
-                    highlighting.
+                    Developed new features to optimize query and endpoint
+                    performance through materialization. Enhanced the online
+                    query editor by introducing intelligent hints and improved
+                    error highlighting for better usability and debugging
+                    efficiency.
                   </div>
                 </section>
                 <section className="mb-6">
@@ -284,13 +358,21 @@ export default function Home() {
                     Tools:
                   </div>
                   <div className="flex flex-wrap gap-2 w-full">
-                    <span className="rounded-xl bg-gray-300 px-3">React</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Redux</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      React
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Redux
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       ClickHouse
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">Graphql</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Ansible</span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Graphql
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Ansible
+                    </span>
                   </div>
                 </section>
               </div>
@@ -309,12 +391,14 @@ export default function Home() {
                     Description:
                   </div>
                   <div className="lg:inline-block lg:w-8/12 w-full">
-                    Leading the migration from a high traffic Symfony/JQuery
-                    website (porntube.com) to a NodeJS/React platform. Also
-                    created a high throughput event logging platform using Node,
-                    Kinesis, Redshift that is used for internal stats
-                    recollection. Also leading the migration of Blacked.com from
-                    a React SPA to a ISR Next.js app using GraphQL.
+                    Led the migration of a high-traffic Symfony/jQuery website
+                    (porntube.com) to a modern Node.js/React platform. Designed
+                    and implemented a high-throughput event logging system
+                    leveraging Node.js, AWS Kinesis, and Redshift to power
+                    internal analytics and reporting. Directed the migration of
+                    Blacked.com from a React SPA to an ISR-enabled Next.js
+                    application with GraphQL, improving scalability and
+                    performance.
                   </div>
                 </section>
                 <section className="mb-6">
@@ -322,15 +406,25 @@ export default function Home() {
                     Tools:
                   </div>
                   <div className="flex flex-wrap gap-2 w-full">
-                    <span className="rounded-xl bg-gray-300 px-3">React</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Redux</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Next.js</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Graphql</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Kinesis</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      React
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Redux
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Next.js
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Graphql
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Kinesis
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Redshift
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Kubernetes
                     </span>
                   </div>
@@ -349,11 +443,12 @@ export default function Home() {
                     Description:
                   </div>
                   <div className="lg:inline-block lg:w-8/12 w-full">
-                    Lead a team of 4 developers while we cleaned the platform’s
-                    code. Also improved the system’s architecture by adding
-                    autoscalling capabilities and adapted it to AWS services. In
-                    the time we improved the platform performance and opened a
-                    market in Latam.
+                    Led a team of 4 developers in refactoring and modernizing
+                    the platform’s codebase. Improved system architecture by
+                    introducing autoscaling capabilities and migrating services
+                    to AWS. These enhancements significantly boosted platform
+                    performance and enabled successful market expansion into
+                    LATAM.
                   </div>
                 </section>
                 <section className="mb-6">
@@ -361,9 +456,13 @@ export default function Home() {
                     Tools:
                   </div>
                   <div className="flex flex-wrap gap-2 w-full">
-                    <span className="rounded-xl bg-gray-300 px-3">Symfony</span>
-                    <span className="rounded-xl bg-gray-300 px-3">Vagrant</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Symfony
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Vagrant
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Bootstrap
                     </span>
                   </div>
@@ -384,11 +483,11 @@ export default function Home() {
                     Description:
                   </div>
                   <div className="lg:inline-block lg:w-8/12 w-full">
-                    Developed back end and front end of all Ofertix.com sites
-                    (Ofertix.com, NiceAnd- Crazy.com,
-                    NiceAndCrazy.fr,Primeriti.es). Also developed other side
-                    projects like deploy system inspired in Capistrano and a
-                    custom redis http cache library for symfony.
+                    Developed both backend and frontend for all Ofertix.com
+                    platforms (Ofertix.com, NiceAndCrazy.com, NiceAndCrazy.fr,
+                    Primeriti.es). Additionally, built supporting projects,
+                    including a custom deployment system inspired by Capistrano
+                    and a Redis-based HTTP cache library for Symfony.
                   </div>
                 </section>
                 <section className="mb-6">
@@ -396,35 +495,15 @@ export default function Home() {
                     Tools:
                   </div>
                   <div className="flex flex-wrap gap-2 w-full">
-                    <span className="rounded-xl bg-gray-300 px-3">Symfony</span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
+                      Symfony
+                    </span>
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       RabbitMQ
                     </span>
-                    <span className="rounded-xl bg-gray-300 px-3">
+                    <span className="rounded-xl bg-gray-300 dark:bg-gray-600 px-3">
                       Capistrano
                     </span>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <hr className="mt-8 mb-12" />
-            <div className="prose">
-              <h2 className="section-headline">Side Projects</h2>
-              <div className="mb-16">
-                <a
-                  href="https://todoestamal.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h3 className="font-semibold">Todoestamal.com</h3>
-                </a>
-                <section className="mb-6">
-                  <div className="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                    Description:
-                  </div>
-                  <div className="lg:inline-block lg:w-8/12 w-full">
-                    Podcast I hosted with some friends talking about personal
-                    implications of working in the tech industry.
                   </div>
                 </section>
               </div>
@@ -453,6 +532,10 @@ export default function Home() {
                   <h3>React Alicante 2024</h3>
                   <p>Dude, where is my password?</p>
                 </div>
+                <div>
+                  <h3>React Alicante 2025</h3>
+                  <p>Local-First is the new Black</p>
+                </div>
               </div>
             </div>
           </div>
@@ -464,7 +547,6 @@ export default function Home() {
                 className="rounded-full w-52 mx-auto mb-2"
                 width="293"
                 height="350"
-                loading={eagerMode ? "eager" : "lazy"}
               />
               <div className="px-4">
                 <h1 className="text-center text-3xl font-semibold mb-2">

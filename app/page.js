@@ -582,6 +582,9 @@ export default function Home() {
         >
           View source
         </a>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          Download PDF
+        </a>
       </footer>
     </div>
   );

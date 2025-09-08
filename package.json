@@ -7,16 +7,18 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "generate-pdf": "node ./scripts/generatePdf.js"
   },
   "dependencies": {
+    "next": "15.5.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.0",
     "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "@biomejs/biome": "2.2.0"
+    "puppeteer": "^24.19.0",
+    "tailwindcss": "^4"
   }
 }

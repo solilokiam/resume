@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <div>
       <div className="container mx-auto max-w-screen-xl">
-        <main className="flex flex-col-reverse lg:flex-row lg:m-12 lg:shadow-2xl print:shadow-none">
+        <main className="flex flex-col-reverse md:flex-row lg:m-12 lg:shadow-2xl print:shadow-none">
           <div className="w-full lg:max-w-sm p-8 bg-gradient-to-b from-gray-400 dark:from-gray-700 via-gray-300 dark:via-gray-400 to-white dark:to-background">
-            <div className="px-2 mb-12 hidden lg:block">
+            <div className="px-2 mb-12 hidden md:block">
               <Image
                 src="/miquelcompany.jpeg"
                 alt="Profile Picture"
@@ -27,7 +27,7 @@ export default function Home() {
                 Engineering Manager
               </h2>
             </div>
-            <div className="font-light text-lg px-2 mb-12">
+            <div className="font-light text-lg px-2 mb-12 print:hidden">
               <h2 className="text-xl font-semibold mb-4">Personal</h2>
               <div className="flex items-center my-3">
                 <Image
@@ -63,7 +63,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="font-light text-lg px-2 mb-12">
+            <div className="font-light text-lg px-2 mb-12 print:hidden">
               <h2 className="text-xl font-semibold mb-4">On the Web</h2>
               <div className="flex items-center my-3">
                 <Image
@@ -99,8 +99,30 @@ export default function Home() {
               </div>
             </div>
 
+            <hr className="mt-8 mb-12 hidden print:block" />
+
             <div className="font-light text-lg px-2 mb-12">
-              <h2 className="text-xl font-semibold mb-4">Languages</h2>
+              <h2 className="text-xl font-semibold mb-4 print:hidden">
+                Education
+              </h2>
+              <h2 className="section-headline mb-4 hidden print:block">
+                Education
+              </h2>
+              <h3 className="font-semibold">BSc Computer Science</h3>
+              <p>2000 - 2008 Universitat Politécnica de Catalunya</p>
+              <h3 className="font-semibold">Erasmus Grant</h3>
+              <p>2005 Teknillinen korkeakoulu</p>
+            </div>
+
+            <hr className="mt-8 mb-12 hidden print:block" />
+
+            <div className="font-light text-lg px-2 mb-12">
+              <h2 className="text-xl font-semibold mb-4 print:hidden">
+                Languages
+              </h2>
+              <h2 className="section-headline mb-4 hidden print:block">
+                Languages
+              </h2>
               <h3 className="font-semibold">Spanish</h3>
               <p>Native</p>
               <h3 className="font-semibold">Catalan</h3>
@@ -109,15 +131,7 @@ export default function Home() {
               <p>Fluent</p>
             </div>
 
-            <div className="font-light text-lg px-2 mb-12">
-              <h2 className="text-xl font-semibold mb-4">Education</h2>
-              <h3 className="font-semibold">BSc Computer Science</h3>
-              <p>2000 - 2008 Universitat Politécnica de Catalunya</p>
-              <h3 className="font-semibold">Erasmus Grant</h3>
-              <p>2005 Teknillinen korkeakoulu</p>
-            </div>
-
-            <div className="font-light text-lg px-2 mb-12">
+            <div className="font-light text-lg px-2 mb-12 print:hidden">
               <h2 className="text-xl font-semibold mb-4">Skills & Tools</h2>
               <ul className="list-none">
                 <li>
@@ -539,7 +553,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:max-w-sm p-2 bg-gray-400 lg:hidden">
+          <div className="w-full lg:max-w-sm p-2 bg-gray-400 md:hidden">
             <div className="flex flex-col md:flex-row items-center p-4 bg-gray-400">
               <Image
                 src="/miquelcompany.jpeg"
@@ -553,7 +567,7 @@ export default function Home() {
                   Miquel Company Rodriguez
                 </h1>
                 <h2 className="text-center text-xl font-light">
-                  Fullstack Developer
+                  Engineering Manager
                 </h2>
               </div>
             </div>
@@ -561,9 +575,6 @@ export default function Home() {
         </main>
       </div>
       <footer className="mt-12 mb-12 text-center flex justify-center flex-col mx-12 p4 print:hidden">
-        {/* <a href="/api/pdf" target="_blank" rel="noopener noreferrer">
-          Download PDF version
-        </a> */}
         <a
           href="https://github.com/solilokiam/resume"
           target="_blank"

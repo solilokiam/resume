@@ -397,7 +397,7 @@ export default function Home() {
                     Oct.&nbsp;2015 - Feb. 2022
                   </div>
                   <div className="lg:inline-block lg:w-8/12 w-full">
-                    Fullstack Developer
+                    Fullstack Team Lead
                   </div>
                 </section>
                 <section className="mb-6">

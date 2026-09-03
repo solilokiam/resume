@@ -1,13 +1,30 @@
 # Welcome to my resume
 
-This project created with nextjs and tailwind css is my personal resume.
+My personal resume — a single static HTML page styled with Tailwind CSS.
+No framework, no client-side JavaScript.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
+npm install
+npm run build      # writes dist/
+open dist/index.html
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the resume.
+`npm run dev` builds once and then watches the CSS. Re-run `npm run build`
+after editing `src/index.html`.
+
+## Editing
+
+- Content and markup: `src/index.html`
+- Styles and Tailwind theme: `src/input.css`
+- Images and icons: `public/`
+
+## PDF
+
+`npm run generate-pdf` builds the site and renders `public/resume.pdf` from the
+local `dist/` output with Puppeteer.
+
+## Deploying
+
+Netlify builds with `npm run build` and publishes `dist/` (see `netlify.toml`).
